@@ -3024,6 +3024,7 @@ class Mysql extends \Zend_Db_Adapter_Pdo_Mysql implements AdapterInterface
             'finset'        => "FIND_IN_SET(?, {{fieldName}})",
             'nfinset'       => "NOT FIND_IN_SET(?, {{fieldName}})",
             'regexp'        => "{{fieldName}} REGEXP ?",
+            'nregexp'        => "{{fieldName}} NOT REGEXP ?",
             'from'          => "{{fieldName}} >= ?",
             'to'            => "{{fieldName}} <= ?",
             'seq'           => null,
